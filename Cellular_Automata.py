@@ -19,19 +19,25 @@ class LifeGame:
         #Initializes the screen
     
     def init_grids(self):
-        #num_cols = Width / CellSize
-        #num_rows = Height / CellSize
         #Initializes the grids on which our generations will be displayed
-        self.game_grid_active = [
-            [0, 0, 0],
-            [0, 0, 0],
-            [0, 0, 0],
-        ]
+        num_cols = int(width / CellSize)
+        num_rows = int(height / CellSize)
+        #need to create the grid
+        #This will be a 2D array
+        self.grids = (
+            [[0] * num_rows] * num_cols,
+            [[0] * num_rows] * num_cols
+        )
+        self.active_grids = 0
+        print(self.grids[0])
+        #above formula was found on Stack Overflow for 2D array of Zeros and modified for 
+        #our variables
+        #The 0 initializes it
+        #The tuple should be immutable. We will see if we can change the list within
 
-        self.game_grid_inactive = [
-        ]
 
-     def draw_grid(self):
+
+    def draw_grid(self):
         #circle_rect = pygame.draw.circle(self.screen, SquareAliveColor, (50, 50), 5, 0)
         pygame.display.flip()
 
