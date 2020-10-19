@@ -1,4 +1,4 @@
-# **asterisks** Fall_Intensive_New_Version
+# **Fall_Intensive_New_Version**
 
 # Installation Steps
 1. Install the application by first installing pygame which can be done as: 
