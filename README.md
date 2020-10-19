@@ -14,3 +14,5 @@ Press run once the code is displayed, and to operate, press "R" to randomize the
 Press "S" to stop and continue the generations 
 
 Press "Q" to quit the program
+
+
