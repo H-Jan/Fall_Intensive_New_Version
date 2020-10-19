@@ -1,4 +1,4 @@
-# Fall_Intensive_New_Version
+# **asterisks** Fall_Intensive_New_Version
 
 # Installation Steps
 1. Install the application by first installing pygame which can be done as: 
@@ -14,5 +14,9 @@ This action is done in terminal
 4. Press run once the code is displayed
 
 5. To operate, press "R" to randomize the grid and provide a new automata. Press "S" to stop and continue the generations. Press "Q" to quit the program
+
+
+## Program Steps
+
 
 
