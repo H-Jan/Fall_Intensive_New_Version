@@ -1,6 +1,6 @@
 # **Fall_Intensive_New_Version**
 
-# Installation Steps
+## Installation Steps
 1. Install the application by first installing pygame which can be done as: 
 
     pip install pygame 
@@ -17,6 +17,9 @@ This action is done in terminal
 
 
 ## Program Steps
+
+
+
 
 
 
