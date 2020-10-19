@@ -1,23 +1,27 @@
-import sys, pygame
+import sys
+import pygame
 import pygame.draw
 
 GridSize = width, height = 620, 440
 SquareDeadColor = 0, 0, 0
 SquareAliveColor = 0, 180, 200
 
+class LifeGame: 
+    def __init__(self):
+        pygame.init()
+        self.screen = pygame.display.set_mode(GridSize)
 
-pygame.init()
-screen = pygame.display.set_mode(GridSize)
+    def run(self):
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT: sys.exit()
+            self.screen.fill(SquareDeadColor)
 
-circle_rect = pygame.draw.circle(screen, SquareAliveColor, (50, 50), 5, 0)
-print(type(circle_rect))
-print(circle_rect)
 
-pygame.display.flip()
-while True:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT: sys.exit()
+            pygame.display.flip()
 
-    screen.fill(SquareDeadColor)
 
+if __name__= '__main__':
+    game = LifeGame()
+    game.run()
 
