@@ -5,9 +5,9 @@ import random
 
 
 
-class LifeGame:
+class CellularAutomata:
 
-    def __init__(self, grid_width = 900, grid_height = 600, Cell_Size = 10, Cell_Color_Alive = (0, 180, 200), 
+    def __init__(self, grid_width = 900, grid_height = 600, Cell_Size = 10, Cell_Color_Alive = (203, 180, 200), 
             Cell_Color_Dead = (0, 0, 0), maximum_fps = 15):
 
         pygame.init()
@@ -211,5 +211,5 @@ class LifeGame:
 
 
 if __name__ == '__main__':
-    game = LifeGame()
+    game = CellularAutomata()
     game.run()
